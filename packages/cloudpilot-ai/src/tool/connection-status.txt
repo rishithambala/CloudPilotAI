@@ -1,0 +1,20 @@
+Check, without changing anything, whether GitHub and each cloud provider (AWS, Oracle Cloud, Google Cloud, Microsoft Azure) are connected on this machine.
+
+This is the same check the Settings screen shows the user, so its answer is authoritative. Always call it BEFORE:
+- asking the user for GitHub or cloud account details the app may already have,
+- planning, provisioning, or deploying anything on a cloud provider,
+- falling back to shell commands against a cloud account.
+
+Usage:
+- `target` defaults to "all". Pass "github" or a single provider id ("aws", "oracle", "google-cloud", "azure") to check just one.
+- Pass `refresh: true` only after the user says they just connected or signed in again; otherwise a result from the last minute is reused.
+
+The result is JSON. Every entry has a `state`, a plain-language `summary` you can repeat to the user as-is, and — when something is not ready — a `nextStep` telling the user exactly what to click. States:
+- connected: ready to use.
+- reauth: set up before but the sign-in expired; the user must sign in again from Settings.
+- not_connected: never set up; the user must connect it from Settings.
+- cli_missing: the provider's command-line tool is not installed.
+- needs_auth / failed (GitHub): the token is missing, rejected, or the connection failed.
+- error: the check itself failed; try again later.
+
+Never try to connect, sign in, or change credentials yourself — tell the user the `nextStep` instead.

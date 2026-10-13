@@ -1,0 +1,225 @@
+{
+  "defs": {
+    "ink0": "#1B1A17",
+    "ink1": "#242320",
+    "ink2": "#33312C",
+    "ink3": "#4A473F",
+    "ink4": "#8C8778",
+    "paper0": "#FAF9F5",
+    "paper1": "#F0EEE6",
+    "paper2": "#E4E1D6",
+    "paper3": "#CFCBBC",
+    "text_dark": "#EDEBE3",
+    "text_light": "#211F1B",
+    "accent": "#C15F3C",
+    "accent_soft": "#D98B5F",
+    "teal": "#5B8A87",
+    "blue": "#6E8FAE",
+    "red": "#C0524A",
+    "amber": "#C99A3C",
+    "green": "#6E9B6A",
+    "purple": "#8B79A6"
+  },
+  "theme": {
+    "primary": {
+      "dark": "accent_soft",
+      "light": "accent"
+    },
+    "secondary": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "accent": {
+      "dark": "accent_soft",
+      "light": "accent"
+    },
+    "error": {
+      "dark": "red",
+      "light": "red"
+    },
+    "warning": {
+      "dark": "amber",
+      "light": "amber"
+    },
+    "success": {
+      "dark": "green",
+      "light": "green"
+    },
+    "info": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "text": {
+      "dark": "text_dark",
+      "light": "text_light"
+    },
+    "textMuted": {
+      "dark": "ink4",
+      "light": "ink3"
+    },
+    "background": {
+      "dark": "ink0",
+      "light": "paper0"
+    },
+    "backgroundPanel": {
+      "dark": "ink1",
+      "light": "paper1"
+    },
+    "backgroundElement": {
+      "dark": "ink2",
+      "light": "paper2"
+    },
+    "border": {
+      "dark": "ink2",
+      "light": "paper3"
+    },
+    "borderActive": {
+      "dark": "ink3",
+      "light": "ink4"
+    },
+    "borderSubtle": {
+      "dark": "ink2",
+      "light": "paper2"
+    },
+    "diffAdded": {
+      "dark": "green",
+      "light": "green"
+    },
+    "diffRemoved": {
+      "dark": "red",
+      "light": "red"
+    },
+    "diffContext": {
+      "dark": "ink3",
+      "light": "ink4"
+    },
+    "diffHunkHeader": {
+      "dark": "ink3",
+      "light": "ink4"
+    },
+    "diffHighlightAdded": {
+      "dark": "green",
+      "light": "green"
+    },
+    "diffHighlightRemoved": {
+      "dark": "red",
+      "light": "red"
+    },
+    "diffAddedBg": {
+      "dark": "#26301F",
+      "light": "#E8EFE2"
+    },
+    "diffRemovedBg": {
+      "dark": "#33201E",
+      "light": "#F5E4E0"
+    },
+    "diffContextBg": {
+      "dark": "ink1",
+      "light": "paper1"
+    },
+    "diffLineNumber": {
+      "dark": "#8C8778",
+      "light": "textMuted"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#26301F",
+      "light": "#E8EFE2"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#33201E",
+      "light": "#F5E4E0"
+    },
+    "markdownText": {
+      "dark": "text_dark",
+      "light": "text_light"
+    },
+    "markdownHeading": {
+      "dark": "accent_soft",
+      "light": "accent"
+    },
+    "markdownLink": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "markdownLinkText": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "markdownCode": {
+      "dark": "green",
+      "light": "green"
+    },
+    "markdownBlockQuote": {
+      "dark": "ink3",
+      "light": "ink4"
+    },
+    "markdownEmph": {
+      "dark": "amber",
+      "light": "amber"
+    },
+    "markdownStrong": {
+      "dark": "accent_soft",
+      "light": "accent"
+    },
+    "markdownHorizontalRule": {
+      "dark": "ink3",
+      "light": "paper3"
+    },
+    "markdownListItem": {
+      "dark": "accent_soft",
+      "light": "accent"
+    },
+    "markdownListEnumeration": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "markdownImage": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "markdownImageText": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "markdownCodeBlock": {
+      "dark": "text_dark",
+      "light": "text_light"
+    },
+    "syntaxComment": {
+      "dark": "ink4",
+      "light": "ink4"
+    },
+    "syntaxKeyword": {
+      "dark": "purple",
+      "light": "purple"
+    },
+    "syntaxFunction": {
+      "dark": "accent_soft",
+      "light": "accent"
+    },
+    "syntaxVariable": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "syntaxString": {
+      "dark": "green",
+      "light": "green"
+    },
+    "syntaxNumber": {
+      "dark": "amber",
+      "light": "amber"
+    },
+    "syntaxType": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "syntaxOperator": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "syntaxPunctuation": {
+      "dark": "text_dark",
+      "light": "text_light"
+    }
+  }
+}

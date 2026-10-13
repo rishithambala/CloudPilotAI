@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "mytheme",
+  "provider": {},
+  "permission": {},
+  "references": {
+    "effect": {
+      "repository": "github.com/Effect-TS/effect-smol",
+      "description": "Use for Effect v4 and effect-smol implementation details",
+    },
+    "cloudpilot-local": {
+      "path": "~/.local/share/cloudpilot",
+      "description": "Contains cloudpilot logs and data",
+    },
+  },
+  "tools": {
+    "github-triage": false,
+    "github-pr-search": false,
+  },
+  "mcp": {
+    "servers": {
+      "aws": {
+        "type": "local",
+        "command": ["uvx", "awslabs.core-mcp-server@latest"],
+        "enabled": false,
+      },
+      "azure": {
+        "type": "local",
+        "command": ["npx", "-y", "@azure/mcp@latest", "server", "start"],
+        "enabled": false,
+      },
+      "cloudflare": {
+        "type": "remote",
+        "url": "https://bindings.mcp.cloudflare.com/sse",
+        "enabled": false,
+      },
+      "vercel": {
+        "type": "remote",
+        "url": "https://mcp.vercel.com",
+        "enabled": false,
+      },
+    },
+  },
+}
